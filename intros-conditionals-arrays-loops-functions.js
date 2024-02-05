@@ -221,7 +221,7 @@
 // var numbers = [42, 221, 71, 7, 18, 87]
 // var oddIndexes = []
 // // Write the code that logs the values from the numbers array that are at odd indexes.
-
+if(numbers[i].length === )
 
 // // Write the code that adds the values from odd indexes into the oddIndexes array.
 
@@ -430,8 +430,22 @@ console.log(yelling("hello"));
 
 // Write a function named helloWorld that takes a language code (e.g. "es", "de", "en") as an argument and returns "Hello World!" in the given language. Ensure you function works for at least 5 languages.
 // Have your function default to returning English.
-
-
+const helloWorld = (langCode) => {
+if (langCode === "de" ) {
+			return "Hallo Welt"
+	} else if (langCode === "es"){
+			return "Hola Mundo"
+	} else if (langCode === "no"){
+			return "Hei Verden"	
+	} else if (langCode === "it"){
+			return "Ciao Mondo"
+	} else if (langCode === "tr"){
+		return "Selam Dünya"
+	} else if (langCode === "fr"){
+			return "Bonjour le monde"
+	} else { return "Hello World"}
+}
+console.log(helloWorld(""));
 // The Pluralizer
 
 // Write a function named pluralizer that takes a number and a singular noun as arguments and returns the number and pluralized form of the noun, if necessary.
@@ -450,3 +464,4 @@ console.log(yelling("hello"));
 
 // pluralizer(3, "people")
 // // output: "3 people"
+const pluralizer = (num, word, plural =)
