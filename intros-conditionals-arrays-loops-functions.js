@@ -520,17 +520,30 @@ const cubeAndSum2 = [0, 5, 10]
 // // Expected output: 1125
 
 
-// const cubed = (array) => {
-//     const reducer= (total,value) => {
-//     return total + value;
-//     }
-//   let sum = array.reduce(reducer)
-//     return sum ** 3
-// }
-// console.log(cubed(cubeAndSum2));
+const cubed = (array) => {
+    const reducer= (total,value) => {
+    return total + value;
+    }
+  let sum = array.reduce(reducer)
+    return sum ** 3
+}
+console.log(cubed(cubeAndSum2));
 
 
-//  const cubed = (array) => {
-//   return array.reduce((total, value) => total + value) **3
-//  }
-//  console.log(cubed(cubeAndSum2));
+ const cubed = (array) => {
+    let array1= []
+    for(let i=0; i<array.length; i++){
+        array1.push(array[i] ** 3)
+    }
+    return array1.reduce((total, value) => total + value)
+ }
+ console.log(cubed(cubeAndSum1));
+
+
+
+ const vowelBeGone = (string) => {
+    let stringToArray = string.split("")
+    return stringToArray.filter(value => value.includes("a", "e", "i", "o", "u") !== true ? value: null).join("")
+    }
+  
+  console.log(vowelBeGone(str));
