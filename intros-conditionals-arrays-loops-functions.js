@@ -221,7 +221,8 @@
 var numbers = [42, 221, 71, 7, 18, 87]
 var oddIndexes = []
 // Write the code that logs the values from the numbers array that are at odd indexes.
-// if ( numbers % 2 === 0)
+
+
  
 // 	console.log(num);
 
@@ -497,53 +498,53 @@ const hodgepodge2 = [5, "Hola", 43, -34, "greetings", true]
   
 //   console.log(remainder(hodgepodge1));
 
-const remainder = (array) => {
-  let justNumbers = array.filter(elements => typeof elements === "number")
-  let total = []
-    for (let i = 0; i<justNumbers.length; i++){
-        total.push(justNumbers[i] % 3)
-    }
-    return total 
-}
-    console.log(remainder(hodgepodge1));
+// const remainder = (array) => {
+//   let justNumbers = array.filter(elements => typeof elements === "number")
+//   let total = []
+//     for (let i = 0; i<justNumbers.length; i++){
+//         total.push(justNumbers[i] % 3)
+//     }
+//     return total 
+// }
+//     console.log(remainder(hodgepodge1));
 
 
 
 
 
-// // 3.  Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
+// // // 3.  Create a function that takes in an array of numbers and returns the sum of all the numbers cubed.
 
 
-const cubeAndSum1 = [2, 3, 4]
-// // Expected output: 99
-const cubeAndSum2 = [0, 5, 10]
-// // Expected output: 1125
+// const cubeAndSum1 = [2, 3, 4]
+// // // Expected output: 99
+// const cubeAndSum2 = [0, 5, 10]
+// // // Expected output: 1125
 
 
-const cubed = (array) => {
-    const reducer= (total,value) => {
-    return total + value;
-    }
-  let sum = array.reduce(reducer)
-    return sum ** 3
-}
-console.log(cubed(cubeAndSum2));
+// const cubed = (array) => {
+//     const reducer= (total,value) => {
+//     return total + value;
+//     }
+//   let sum = array.reduce(reducer)
+//     return sum ** 3
+// }
+// console.log(cubed(cubeAndSum2));
 
 
- const cubed = (array) => {
-    let array1= []
-    for(let i=0; i<array.length; i++){
-        array1.push(array[i] ** 3)
-    }
-    return array1.reduce((total, value) => total + value)
- }
- console.log(cubed(cubeAndSum1));
+//  const cubed = (array) => {
+//     let array1= []
+//     for(let i=0; i<array.length; i++){
+//         array1.push(array[i] ** 3)
+//     }
+//     return array1.reduce((total, value) => total + value)
+//  }
+//  console.log(cubed(cubeAndSum1));
 
 
 
- const vowelBeGone = (string) => {
-    let stringToArray = string.split("")
-    return stringToArray.filter(value => value.includes("a", "e", "i", "o", "u") !== true ? value: null).join("")
-    }
+//  const vowelBeGone = (string) => {
+//     let stringToArray = string.split("")
+//     return stringToArray.filter(value => value.includes("a", "e", "i", "o", "u") !== true ? value: null).join("")
+//     }
   
-  console.log(vowelBeGone(str));
+//   console.log(vowelBeGone(str));
